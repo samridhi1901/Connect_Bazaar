@@ -1,0 +1,180 @@
+
+
+
+
+<% layout('layouts/boilerplate') %>
+
+<section class=" bg-image "
+  style="background-image: url('https://img.freepik.com/free-vector/flat-geometric-background_23-2148957211.jpg?size=626&ext=jpg');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Sell Your Product Here! </h2>
+              <form action="/home" class="needs-validation" method="POST" novalidate>
+                <div class=" form-outline mb-4">
+                    <label for="naam">Product Name:</label>
+                    <input type="text"  required  name="name" id="naam" placeholder="Name of product"  class="form-control ">
+                    <!-- looks good validator -->
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                      <!-- error validator -->
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                </div>
+                <div class="form-outline mb-4">
+                  <label for="img">Image:</label>
+                  <input type="text" required  name="img" id="img" placeholder="Image URL" class="form-control form-control-lg">
+                  <!-- looks good validator -->
+                  <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                    <!-- error validator -->
+                  <div class="invalid-feedback">
+                      Please choose a img 
+                    </div>
+              </div>
+              <div class="form-outline mb-4">
+                <label for="paisa">Price:</label>
+                <input type="number" required class="form-control" name="price" id="paisa" placeholder="Image price" class="form-control form-control-lg">
+                <!-- looks good validator -->
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <!-- error validator -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+            </div>
+
+            <div class="form-outline mb-4">
+                <label for="desc">Desc:</label>
+                <textarea  name="desc"  required id="desc"  rows="5" placeholder="Description of product" class="form-control form-control-lg"></textarea>
+                <!-- looks good validator -->
+                <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                  <!-- error validator -->
+                <div class="invalid-feedback">
+                    Please choose a username.
+                  </div>
+            </div>
+            <div class="form-group">
+                <label for="category">Category select</label>
+                <select class="form-control" id="category" name="category">
+                  <option>Vehicle</option>
+                  <option>Furniture</option>
+                  <option>Electronics</option>
+                  <option>DecorItem</option>
+                  <option>Clothing</option>
+                  <option>BookStationary</option>
+                </select>
+              </div>
+              <br><br/>
+              <div class="form-group mb-4 justify-content-center">
+                <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Submit</button>
+              </div>
+            </form>
+              <!-- <div class="d-flex justify-content-center">
+                <button type="submit"
+                  class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Submit</button>
+              </div> -->
+
+
+              <!-- <form action="/login" method="POST">
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="username" class="form-control form-control-lg"  name="username"/>
+                  <label class="form-label" for="username">Product Name</label>
+                </div> -->
+
+                <!-- <div class="form-outline mb-4">
+                  <input type="email" id="email" class="form-control form-control-lg" name="email" />
+                  <label class="form-label" for="email">Your Email</label>
+                </div> -->
+
+                <!-- <div class="form-outline mb-4">
+                  <input type="password" id="password" class="form-control form-control-lg" name="password"/>
+                  <label class="form-label" for="password">Password</label>
+                </div> -->
+
+                 <!-- <div class="form-outline mb-4">
+                  <input type="number" id="contact" class="form-control form-control-lg" name="contact" />
+                  <label class="form-label" for="contact">Enter contact information</label>
+                </div>  -->
+
+                <!-- <div class="form-check d-flex justify-content-center mb-5">
+                  <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                  <label class="form-check-label" for="form2Example3g">
+                    I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                  </label>
+                </div> -->
+
+                <!-- <div class="d-flex justify-content-center">
+                  <button type="submit"
+                    class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Login</button>
+                </div>
+
+                <p class="text-center text-muted mt-5 mb-0">Do not have an account? <a href="/register"
+                    class="fw-bold text-body"><u>Signup here</u></a></p> -->
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  body{
+   background-repeat: no-repeat; /* Prevent background image from repeating */
+  }
+    .gradient-custom-3 {
+/* fallback for old browsers */
+background: #84fab0;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+/* fallback for old browsers */
+background: #84fab0;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+</style>
+
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+'use strict'
+
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+const forms = document.querySelectorAll('.needs-validation')
+
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+form.addEventListener('submit', event => {
+  if (!form.checkValidity()) {
+    event.preventDefault()
+    event.stopPropagation()
+  }
+
+  form.classList.add('was-validated')
+}, false)
+})
+})()
+</script>

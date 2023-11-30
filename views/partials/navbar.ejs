@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top " style="padding-left: 56px;padding-right:56px;background-color:#65e8b4">
+  <span class="navbar-brand mb-0 h1">Connect Bazaar</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <form class="form-inline my-2 my-lg-0 mx-5" role="search" action="/find">
+      <input class="form-control mr-sm-2" style="width:500px" type="search" placeholder="Search" aria-label="Search" name="search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <ul class="navbar-nav ml-auto" style="margin-left: 550px;">
+      <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
+             Dropdown
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <%  if(!currentUser){%>
+             <a class="dropdown-item" href="/login" style="color: black;">Login</a>
+             <%  }  else {%>
+             <a class="dropdown-item" href="/product/new" style="color: black;">Sell</a>
+             <div class="dropdown-divider"></div>
+             <a class="dropdown-item" href="/logout" style="color: black;">Logout</a>
+             <% }%>
+         </div>
+     </li> 
+     <!-- <li class="nav-item active">
+       <%  if(!currentUser){%>
+
+         <a class="nav-link mx-2" href="/login"> <button class="btn btn-sm border m-2">Login</button> </a>
+        <%  }  else {%>
+        
+        
+         <a href="" class="nav-link mx-2">
+           <i class="fa-solid fa-cart-shopping"></i>
+           <sup><span class="badge bg-danger">2</span></sup>
+         </a>
+         <a  class="nav-link mx-2" href="/product/new"><button class="btn btn-sm border m-2">Sell</button></a>
+      
+         
+         <a href="/logout" class="nav-link mx-2" href="/logout"><button class="btn btn-sm border m-2">Logout</button></a>
+         <% }%>
+         <a class="nav-link" href="/product/new" style="color: white;">Login</a> -->
+     <!-- </li> -->
+ </ul>
+  </div>
+</nav>

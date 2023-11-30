@@ -1,0 +1,19 @@
+#carouselExampleIndicators {
+  max-width: 1000px; /* Adjust the max-width as needed */
+  max-height: 300px; /* Adjust the max-height as needed */
+  margin: auto; /* Center the carousel on the page */
+}
+
+.carousel-inner {
+  max-height: 90%; /* Ensure the inner content fills the reduced height */
+}
+
+.carousel-item {
+  height: 90%; /* Ensure the item takes full height */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensure the image covers the entire item */
+  height: 100%; /* Ensure the image takes full height */
+  width: 100%; /* Ensure the image takes full width */
+}
